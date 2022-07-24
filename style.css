@@ -16,7 +16,6 @@ body {
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
 }
 
 h1,
@@ -64,20 +63,77 @@ button {
 
 /************ Nav ************/
 nav {
-  background-color: #043000;
-  background-image: url("assets/gravel.png");
   height: 50px;
   text-align: center;
   font-family: 'Carter One', cursive;
 }
 
 .navLogo {
-  font-size: 32px;
-  color: #085e00;
+  font-size: 28px;
+  color: #F44D34;
+  line-height: 50px;
 }
 
 @media screen and (max-width: 480px) {
   .invisM {
     display: none;
   }
+}
+
+/************ Main ************/
+.main {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+@media screen and (max-width: 770px) {
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/************ Banner ************/
+.banner {
+  height: 75vh;
+  background-image: url("assets/bannerBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bannerImg {
+  padding-top: 50px;
+  height: 400px;
+  width: auto;
+  animation: console 3s linear infinite
+}
+
+@keyframes console {
+  0% {
+      transform: translateY(-20px);
+    }
+  
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.bannerText {
+  padding-top: 25vh;
+}
+
+.brandName {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Carter One', cursive;
+  color: #F44D34;
+}
+
+.brandMotto {
+  color: #24EBF8;
 }
