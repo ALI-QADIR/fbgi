@@ -173,8 +173,11 @@ nav {
 }
 
 /********** Projects ***********/
-.carousel {
-  height: 60vh;
-  width: 100vw;
-  position: relative;
+.projects {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.slide {
+  height: 50vh;
 }
