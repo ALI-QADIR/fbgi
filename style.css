@@ -82,8 +82,8 @@ nav {
 
 /************ Main ************/
 .main {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 @media screen and (max-width: 770px) {
@@ -106,7 +106,7 @@ nav {
   padding-top: 50px;
   height: 400px;
   width: auto;
-  animation: console 3s linear infinite
+  animation: console 3s linear infinite;
 }
 
 @keyframes console {
@@ -136,4 +136,45 @@ nav {
 
 .brandMotto {
   color: #24EBF8;
+}
+
+/************* about ****************/
+.about {
+  height: fit-content;
+  color: #121212;
+  margin-top: -10vh;
+  border-radius: 30px;
+  background-image: url("assets/escheresque-dark.png"), linear-gradient(-45deg, #F44D34, #24EBF8);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.icon {
+  font-size: 100px;
+  color: #121212;
+  padding-bottom: 20px;
+  transition: 0.2s linear;
+}
+
+.icon:hover{
+  animation: shake 0.2s linear 4;
+}
+
+@keyframes shake {
+  0%{
+    transform: rotateZ(-10deg);
+  }
+  50%{
+    transform: rotateZ(10deg);
+  }
+  100%{
+    transform: rotateZ(-10deg);
+  }
+}
+
+/********** Projects ***********/
+.carousel {
+  height: 60vh;
+  width: 100vw;
+  position: relative;
 }
